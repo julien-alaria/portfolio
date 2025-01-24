@@ -163,12 +163,12 @@ footer{
 /* pour les écrans de 1024px à 1199px */
 @media (min-width: 1024px) and (max-width: 1199px) {
     .container_2 {
-        font-size: 15px;
+        font-size: 25px;
     }
 
     img {
         max-width: auto;
-        height: 300px;
+        height: 500px;
     }
 }
 
