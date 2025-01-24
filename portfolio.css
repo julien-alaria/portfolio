@@ -175,7 +175,7 @@ footer{
 /* pour les écrans de moins de 1024px */
 @media (max-width: 1024px) {
     .container_2 {
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
@@ -185,6 +185,10 @@ footer{
         flex-direction: column; /* Stack items vertically */
         padding: 10px;
         align-items: center;
+    }
+    
+    .container_2 {
+        font-size: 15px;
     }
 
     .item_1, .item_2 {
