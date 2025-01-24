@@ -207,8 +207,10 @@ footer{
     }
 
     img {
-        height: 300px; /* Adjust image size for smaller screens */
+        max-height: 300px; /* Adjust image size for smaller screens */
         max-width: 100%;
+        height: auto;
+        width: auto;
     }
 
     footer {
