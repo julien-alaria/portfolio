@@ -147,7 +147,7 @@ footer{
 /* pour les écrans à partir de 1200px */
 @media (min-width: 1200px) {
     .container_2 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     img {
