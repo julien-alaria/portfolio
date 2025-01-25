@@ -144,79 +144,95 @@ footer{
     border: 5px solid white ;
 }
 
-/* pour les écrans à partir de 1200px */
-@media (min-width: 1200px) {
+
+/* Pour les écrans à partir de 1400px */
+@media (min-width: 1400px) {
     .container_2 {
-        font-size: 25px;
+        font-size: 30px; /* Taille de police pour les très grands écrans */
     }
 
     img {
-        max-width: auto;
-        height: 500px;
+        max-width: 100%; /* Rend l'image responsive */
+        height: 500px; /* Hauteur fixe */
     }
 
     .nav_bar {
-        border: 5px solid white;
+        border: 5px solid white; /* Bordure blanche */
     }
 }
 
-/* pour les écrans de 1024px à 1199px */
-@media (min-width: 1024px) and (max-width: 1199px) {
+/* Pour les écrans à partir de 1200px */
+@media (min-width: 1200px) and (max-width: 1399px) {
     .container_2 {
-        font-size: 20px;
+        font-size: 25px; /* Ajuste la taille de police */
     }
 
     img {
-        max-width: auto;
-        height: 400px;
+        max-width: 100%; /* Rend l'image responsive */
+        height: 400px; /* Hauteur fixe */
+    }
+
+    .nav_bar {
+        border: 5px solid white; /* Bordure blanche */
     }
 }
 
-/* pour les écrans de moins de 1024px */
+/* Pour les écrans de 1024px à 1199px */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .container_2 {
+        font-size: 20px; /* Réduit la taille de la police */
+    }
+
+    img {
+        max-width: 100%; /* Rend l'image responsive */
+        height: 400px; /* Hauteur fixe */
+    }
+}
+
+/* Pour les écrans de moins de 1024px */
 @media (max-width: 1024px) {
     .container_2 {
-        font-size: 15px;
+        font-size: 15px; /* Taille de police plus petite */
     }
 }
 
-/* pour les écrans de moins de 414px */
+/* Pour les écrans de moins de 414px */
 @media (max-width: 414px) {
     .container_1, .container_2 {
-        flex-direction: column; /* Stack items vertically */
-        padding: 10px;
-        align-items: center;
+        flex-direction: column; /* Empile les éléments verticalement */
+        padding: 10px; /* Ajoute un peu d'espace interne */
+        align-items: center; /* Centre les éléments */
     }
     
     .container_2 {
-        font-size: 12px;
+        font-size: 12px; /* Réduit la taille de la police */
     }
 
     .item_1, .item_2 {
-        margin: 5px;
+        margin: 5px; /* Ajoute de l'espace entre les items */
     }
 
     .nav_bar {
-        position: sticky;
-        flex-direction: row; 
-        align-items: center; /* Align items to the center */
+        position: sticky; /* Fixe la barre de navigation */
+        flex-direction: row; /* Dispose les éléments horizontalement */
+        align-items: center; /* Centre les éléments */
     }
 
     .nav_bar a {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        margin-bottom: 10px; /* Add some space between links */
+        font-size: 24px; /* Ajuste la taille de la police des liens */
+        margin-bottom: 10px; /* Ajoute de l'espace entre les liens */
     }
 
     img {
-        max-height: 300px; /* Adjust image size for smaller screens */
-        max-width: 100%;
-        height: auto;
-        width: auto;
+        max-height: 300px; /* Limite la hauteur des images */
+        max-width: 100%; /* Ajuste la largeur à celle du conteneur */
+        height: auto; /* Conserve les proportions */
+        width: auto; /* Conserve les proportions */
     }
 
     footer {
-        height: 5vh;
-        font-size: 18px; /* Adjust footer text size */
-        padding: 10px;
+        height: 5vh; /* Ajuste la hauteur du footer */
+        font-size: 18px; /* Ajuste la taille de la police */
+        padding: 10px; /* Ajoute un peu d'espace interne */
     }
 }
-
