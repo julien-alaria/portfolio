@@ -145,8 +145,8 @@ footer{
 }
 
 
-/* Pour les écrans à partir de 1400px */
-@media (min-width: 1400px) {
+/* Pour les écrans à partir de 1441px */
+@media (min-width: 1441px) {
     .container_2 {
         font-size: 30px; /* Taille de police pour les très grands écrans */
     }
@@ -162,14 +162,15 @@ footer{
 }
 
 /* Pour les écrans à partir de 1200px */
-@media (min-width: 1200px) and (max-width: 1399px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
     .container_2 {
         font-size: 25px; /* Ajuste la taille de police */
     }
 
     img {
-        max-width: 100%; /* Rend l'image responsive */
-        height: 400px; /* Hauteur fixe */
+        max-width: 100%; /* L'image ne dépasse jamais la largeur du conteneur */
+        height: auto; /* Maintient les proportions */
+        max-height: 300px; /* Limite la hauteur pour éviter qu'elle ne devienne trop grande */
     }
 
     .nav_bar {
